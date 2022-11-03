@@ -25,6 +25,19 @@ public class MaximumNumber {
         System.out.println(maximumNumber + " is max out of "+firstNumber+", "+secondNumber+" and "+thirdNumber);
 
 
-	}
+     }
+     public static void findMax(Float firstNumber, Float secondNumber, Float thirdNumber) {
+    	 Float maximumNumber;
+
+    	 if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0) {
+    		 maximumNumber = firstNumber;
+    	 } else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thirdNumber) > 0) {
+    		 maximumNumber = secondNumber;
+    	 } else {
+    		 maximumNumber = thirdNumber;
+    	 }
+    	 System.out.println(maximumNumber + " is max out of " + firstNumber + ", " +secondNumber + " and " +thirdNumber);
+     }
 
 }
+
