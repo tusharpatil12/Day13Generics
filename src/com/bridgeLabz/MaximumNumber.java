@@ -38,6 +38,18 @@ public class MaximumNumber {
     	 }
     	 System.out.println(maximumNumber + " is max out of " + firstNumber + ", " +secondNumber + " and " +thirdNumber);
      }
+     public static void findMaxString(String firstString, String secondString, String thirdString) {
+    	 String maximumstring;
+
+    	 if (firstString.compareTo(secondString) > 0 && firstString.compareTo(thirdString) > 0) {
+    		 maximumstring = firstString;
+    	 } else if (secondString.compareTo(firstString) > 0 && secondString.compareTo(thirdString) > 0) {
+    		 maximumstring = secondString;
+    	 } else {
+    		 maximumstring = thirdString;
+    	 }
+    	 System.out.println(maximumstring + " is max out of " + firstString + ", " +secondString + " and " +thirdString);
+     }
 
 }
 
