@@ -19,15 +19,18 @@ public class MaximumNumber {
 		findMax(floatNumber1, floatNumber2, floatNumber3);
 		findMax(string1, string2, string3);
 	}
+	
 	static<E extends Comparable<E>> void findMax(E firstVariable,E secondVariable,E thirdVariable ){
 		E maximumVariable;
 
 		if(firstVariable.compareTo(secondVariable)>0 && firstVariable.compareTo(thirdVariable)>0) {
 			maximumVariable = firstVariable;
 		}
+		
 		else if(secondVariable.compareTo(firstVariable)>0 && secondVariable.compareTo(thirdVariable)>0) {
 			maximumVariable = secondVariable;
 		}
+		
 		else {
 			maximumVariable = thirdVariable;
 		}
